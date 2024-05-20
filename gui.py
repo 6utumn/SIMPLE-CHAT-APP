@@ -6,8 +6,8 @@ import threading as th
 
 import hashlib
 
-TargetIP = "http://0.tcp.jp.ngrok.io"
-PORT     = 19492
+TargetIP = "127.0.0.1" # Change this
+PORT     = 80 # Change this
 
 Server   = sk.socket(sk.AF_INET, sk.SOCK_STREAM)
 Server.connect((TargetIP, PORT))
